@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-[Portfolio](https://banstein.github.io/Module1-Day3/)
+[Portfolio](https://banstein.github.io/portfolio-project/)
 
 ## Built With
 
@@ -15,7 +15,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-clone repo: https://github.com/Banstein/Module1-Day3.git
+clone repo: https://github.com/Banstein/portfolio-project.git
 
 ## Authors
 
