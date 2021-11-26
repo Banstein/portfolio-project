@@ -27,6 +27,10 @@ header {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo:hover {
   cursor: pointer;
 }
