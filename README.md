@@ -1,5 +1,5 @@
 # Portfolio
-
+Hi. I’m Islam, a Full-stack Developer I'm showing experience creating successful websites.
 ## Live Demo
 
 [Portfolio](https://banstein.github.io/portfolio-project/)
