@@ -1,5 +1,5 @@
 # Portfolio
-Hi. I’m Islam, a Full-stack Developer I'm showing my experience of creating successful websites.
+Mobile version and setup of the figma design showing my skills of creating successful websites.
 ## Live Demo
 
 [Portfolio](https://banstein.github.io/portfolio-project/)
