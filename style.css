@@ -253,8 +253,7 @@ hr {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+
   background: #6070FF;
 }
 
@@ -272,3 +271,4 @@ line-height: 28px;
 text-align: center;
 color: #EBEBFF;
 }
+
