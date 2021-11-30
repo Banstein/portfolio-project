@@ -170,17 +170,16 @@
             <h1>Contact me</h1>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
             <form action="https://formspree.io/f/xayvwlyd" method="post" class="contacts-form">
-                <ul>
-                    <label for="Username"></label>
-                    <li><input id="width-form" type="text" placeholder="Username" maxlength: 30 required></li>
-                    <label for="E-mail"></label>
-                    <li><input id="width-form" type="email" placeholder="E-mail"  required ></li>
-                    <label for="textarea"></label>
-                    <li><textarea name="" id="width-form" cols="50" rows="6" placeholder="Write your message here" maxlentgh: 500></textarea></li>
-                    <li><button class="get-it-touch" type="submit" style="width: 140px; height: 48px;">Get It Touch</button></li>
-                </ul>
-                <hr class="end-break"><a href="#header"></a></hr>
+                <label for="username"></label>
+                <input id="width-form" type="text" placeholder="Username" maxlength: 30  required name="username">
+                <label for="email"></label>
+                <input id="width-form" type="email" placeholder="E-mail" required name="email">
+                <label for="textarea"></label>
+                <label for="text"></label>
+                <textarea name="text" id="width-form" cols="50" rows="6" placeholder="Write your message here" maxlentgh: 500 ></textarea>
+                <button class="get-it-touch" type="submit" style="width: 140px; height: 48px;">Get It Touch</button>
             </form>
+            <div class="end-break"><a href="#header"></a></div>
         </article>
     </footer>
 </body>

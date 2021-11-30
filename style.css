@@ -259,7 +259,6 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #6070FF;
-  
   display: flex;
   padding: 105px 24px 8px 24px; 
   margin-top: 103px;
@@ -297,14 +296,14 @@ hr {
   color: #172B4D;
 }
 
-.container input::placeholder{
+.container input::placeholder {
   color: #172B4D;
 }
 
 .contacts-form textarea {
   width: calc(100% - 38px - 15px);
   padding: 15px 38px 15px 16px;
-  color: #B3BAC5;
+  color: #172B4D;
   border-radius: 8px;
   font-size: 15px;
 }
@@ -326,10 +325,20 @@ hr {
   border-radius: 8px;
 }
 
+.get-it-touch:hover {
+  background-color: #6070FF;
+  color: #fff;
+}
+
+.get-it-touch:visited {
+  background: #2230D2;
+  color: #fff;
+}
+
 .end-break {
-  content: "";
   width: 134px;
   border: 2px black solid;
   margin: 0 auto;
   border-radius: 10px;
 }
+
