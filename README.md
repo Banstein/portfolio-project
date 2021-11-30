@@ -4,6 +4,10 @@ Mobile version and setup of the figma design showing my skills of creating succe
 
 [Portfolio](https://banstein.github.io/portfolio-project/)
 
+## Project's Screenshots
+
+![screenshot](./images/project-screenshot)
+
 ## Built With
 
 - HTML
