@@ -246,7 +246,6 @@ button:hover {
   height: 66.72px;
 }
 
-
 hr {
   border-top: 1px solid #dfe1e6;
 }
@@ -258,9 +257,9 @@ hr {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #6070FF;
+  background-color: #6070ff;
   display: flex;
-  padding: 105px 24px 8px 24px; 
+  padding: 105px 24px 8px 24px;
   margin-top: 103px;
   border-top-left-radius: 100px;
 }
@@ -277,61 +276,56 @@ hr {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
+  color: #ebebff;
   margin-bottom: 40px;
 }
 
-.contacts-form ul {
-  list-style: none;
-}
-
 .container input {
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin-bottom: 20px;
   width: calc(100% - 16px);
   padding-left: 16px;
   height: 48px;
   font-size: 17px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .container input::placeholder {
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .contacts-form textarea {
   width: calc(100% - 38px - 15px);
   padding: 15px 38px 15px 16px;
-  color: #172B4D;
+  color: #172b4d;
   border-radius: 8px;
   font-size: 15px;
 }
 
 .contacts-form textarea::placeholder {
-  color: #B3BAC5;
+  color: #b3bac5;
 }
 
 .get-it-touch {
   width: 140px;
-  height: 100px;
+  height: 48px;
   padding: 12px 16px;
   font-weight: 500;
   font-size: 17px;
-  height: 24px;
-  width: 140px;
   background-color: #fff;
-  color: #6070FF;
+  color: #6070ff;
   border-radius: 8px;
+  display: flex;
 }
 
 .get-it-touch:hover {
-  background-color: #6070FF;
+  background-color: #6070ff;
   color: #fff;
 }
 
 .get-it-touch:visited {
-  background: #2230D2;
+  background: #2230d2;
   color: #fff;
 }
 
@@ -341,4 +335,3 @@ hr {
   margin: 0 auto;
   border-radius: 10px;
 }
-
