@@ -265,13 +265,17 @@ hr {
 }
 
 .container input,textarea {
- border: 1px solid #CFD8DC;
+  border: 1px solid #CFD8DC;
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
+.container input {
+  height: 48px;
+}
+
 #width-form {
-  width: 100%;
+  padding: 15px 38px 15px 16px;
 }
 
 .container h1 {
@@ -290,12 +294,17 @@ hr {
   margin-bottom: 40px;
 }
 
-.container input {
-  position: relative;
-  height: 48px;
+.btn {
+  font-weight: 500;
+  height: 24px;
+  width: 140px;
+  background-color: #fff;
+  color: #6070FF;
 }
 
-.btn {
-  height: 24px;
-  width: 108px;
+.end-break {
+  align-self: center;
+  background: #0D151E;
+  border-radius: 10px;
+  width: 134px;
 }
