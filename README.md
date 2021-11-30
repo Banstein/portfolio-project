@@ -1,13 +1,13 @@
 # Portfolio
 Mobile version and setup of the figma design showing my skills of creating successful websites.
-## Live Demo
-
-[Portfolio](https://banstein.github.io/portfolio-project/)
 
 ## Project's Screenshots
 
 ![project-screenshot](https://user-images.githubusercontent.com/35707975/144114035-8cd57f94-dcec-4f9e-afb4-489d4407b272.png)
 
+## Live Demo
+
+[Portfolio](https://banstein.github.io/portfolio-project/)
 
 ## Built With
 
