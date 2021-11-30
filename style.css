@@ -54,7 +54,6 @@ a {
   padding: 0 24px;
   display: flex;
   flex-flow: column wrap;
-  height: 718px;
   border-radius: 20px;
 }
 
@@ -249,4 +248,90 @@ button:hover {
 
 hr {
   border-top: 1px solid #dfe1e6;
+}
+
+/* footer */
+
+.container {
+  background-image: url(images/contacts.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #6070ff;
+  display: flex;
+  padding: 105px 24px 8px 24px;
+  margin-top: 103px;
+  border-top-left-radius: 100px;
+}
+
+.container h1 {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.container p {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 40px;
+}
+
+.container input {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: calc(100% - 16px);
+  padding-left: 16px;
+  height: 48px;
+  font-size: 17px;
+  color: #172b4d;
+}
+
+.container input::placeholder {
+  color: #172b4d;
+}
+
+.contacts-form textarea {
+  width: calc(100% - 38px - 15px);
+  padding: 15px 38px 15px 16px;
+  color: #172b4d;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.contacts-form textarea::placeholder {
+  color: #b3bac5;
+}
+
+.get-it-touch {
+  width: 140px;
+  height: 48px;
+  padding: 12px 16px;
+  font-weight: 500;
+  font-size: 17px;
+  background-color: #fff;
+  color: #6070ff;
+  border-radius: 8px;
+  display: flex;
+}
+
+.get-it-touch:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.get-it-touch:visited {
+  background: #2230d2;
+  color: #fff;
+}
+
+.end-break {
+  width: 134px;
+  border: 2px black solid;
+  margin: 0 auto;
+  border-radius: 10px;
 }
