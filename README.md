@@ -6,7 +6,7 @@ Mobile version and setup of the figma design showing my skills of creating succe
 
 ## Project's Screenshots
 
-[Screenshot 2021-11-30 210520](https://user-images.githubusercontent.com/35707975/144111607-aa761404-3759-4822-9a6d-01c427b70466.png)
+![screenshot](./images/project-screenshot)
 
 
 ## Built With!
