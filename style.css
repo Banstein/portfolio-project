@@ -253,8 +253,21 @@ hr {
 }
 
 .container {
+  background-image: url(images/contacts.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #6070FF;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 105px 24px 24px 24px;
+  margin-top: 103px;
+}
 
-  background: #6070FF;
+.container input,textarea {
+  width: 100%;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .container h1 {
@@ -266,9 +279,9 @@ hr {
 }
 
 .container p {
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-color: #EBEBFF;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+  margin-bottom: 40px;
 }
-
