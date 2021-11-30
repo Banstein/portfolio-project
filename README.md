@@ -6,7 +6,7 @@ Mobile version and setup of the figma design showing my skills of creating succe
 
 ## Project's Screenshots
 
-![screenshot](./images/project-screenshot)
+![screenshot](./project-screenshot)
 
 
 ## Built With!
