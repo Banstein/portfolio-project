@@ -247,6 +247,28 @@ button:hover {
   height: 66.72px;
 }
 
+
 hr {
   border-top: 1px solid #dfe1e6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #6070FF;
+}
+
+.container h1 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+}
+
+.container p {
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #EBEBFF;
 }
