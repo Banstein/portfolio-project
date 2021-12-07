@@ -30,7 +30,7 @@ header {
 /* header-logo */
 
 .logo {
-  color: #6070ff;
+  color: black;
   font-size: 18px;
   font-weight: bold;
   height: 20px;
@@ -157,7 +157,7 @@ a {
 }
 
 .card-skills li {
-  color: #6070ff;
+  color: black;
   font-weight: 500;
   font-size: 12px;
   padding: 4px 12px;
