@@ -1,5 +1,5 @@
 const menuOverlay = document.querySelector('#menu-overlay');
-const mobileMenuButton = document.querySelector('mobileMenuButton');
+const mobileMenuButton = document.querySelector('#mobileMenuButton');
 
 function mobileMenuToogle() {
   menuOverlay.style.width = '100%';
