@@ -15,7 +15,11 @@
 <body>
     <header>
         <h1><a class="logo" href="#">My Logo</a></h1>
-        <nav class="menu" id="mobileMenuButton"><span class="material-icons">menu</span></nav>
+        <div class="menu" tabindex="2" id="mobileMenuButton">
+            <div class="toogle-btn"></div>
+            <div class="toogle-btn"></div>
+            <div class="toogle-btn"></div>
+        </div>
     </header>
     <main>
         <article class="main-content">
@@ -34,7 +38,7 @@
                 </ul>
             </section>
         </article>
-        <article class="cards">
+        <article class="cards" id="portfolio">
             <section class="one card-pattern">
                 <img src="images/one-background.png" alt="Missed Image" class="cards-img">
                 <h2 class="card-header">Tonic</h2>
@@ -128,7 +132,8 @@
                 <button class="see-button" type="button">See Projects</button>
             </section>
         </article>
-        <article class="about-content">
+        <!-- about -->
+        <article class="about-content" id="about">
             <section class="main-content-container">
                 <h2 class="about-title">About Myself</h2>
                 <p class="main-text"> Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me</p>
@@ -165,7 +170,7 @@
             <hr>
         </article>
     </main>
-    <footer class='container'>
+    <footer class='container' id="contact">
         <article >
             <h1>Contact me</h1>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
@@ -178,7 +183,16 @@
             <div class="end-break"><a href="#header"></a></div>
         </article>
     </footer>
-
+    <div class="menu-overlay" id="menu-overlay">
+        <a href="#" class="closeMenu" onclick="closeMobileMenu()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+        <ul class="mobile-menu">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
