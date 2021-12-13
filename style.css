@@ -61,6 +61,11 @@ header {
   padding-bottom: 30px;
 }
 
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
 .mobile-menu > li a {
   color: #fff;
 }
@@ -72,11 +77,6 @@ header {
   font-size: 18px;
   font-weight: bold;
   height: 20px;
-}
-
-a {
-  text-decoration: none;
-  list-style: none;
 }
 
 .logo:hover {
