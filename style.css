@@ -13,17 +13,11 @@ header {
   margin: 0 24px 24px 24px;
 }
 
-/* header-menu */
-
-.material-icons {
-  color: #6070ff;
-}
-
-.menu {
-  padding-top: 20px;
-}
-
-.menu:hover {
+.toogle-btn {
+  width: 35px;
+  height: 3px;
+  background-color: #6070ff;
+  margin: 6px 0;
   cursor: pointer;
 }
 
