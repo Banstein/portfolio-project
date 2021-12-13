@@ -21,6 +21,50 @@ header {
   cursor: pointer;
 }
 
+.menu-overlay {
+  background-color: #6070ff;
+  display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+  overflow-x: hidden;
+  transition: 0.75ms;
+  backdrop-filter: blur(6px);
+}
+
+.closeMenu {
+  height: 12px;
+  width: 12px;
+  font-size: 20px;
+  border-radius: 0;
+  float: right;
+  margin-right: 38px;
+  margin-top: 62px;
+  color: #fff;
+}
+
+.mobile-menu {
+  list-style: none;
+  padding: 106px 96px 0 28px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.mobile-menu > li {
+  padding-bottom: 30px;
+}
+
+.mobile-menu > li a {
+  color: #fff;
+}
+
 /* header-logo */
 
 .logo {
