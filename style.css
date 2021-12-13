@@ -19,6 +19,7 @@ header {
   background-color: #6070ff;
   margin: 6px 0;
   cursor: pointer;
+  display: none;
 }
 
 .menu-overlay {
@@ -372,4 +373,30 @@ hr {
   border: 2px black solid;
   margin: 0 auto;
   border-radius: 10px;
+}
+
+.desktop-menu {
+  margin-right: 50px;
+}
+
+.desktop-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.desktop-menu ul li a {
+  color: #344563;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .toogle-btn {
+    display: block;
+  }
 }
