@@ -13,18 +13,62 @@ header {
   margin: 0 24px 24px 24px;
 }
 
-/* header-menu */
-
-.material-icons {
-  color: #6070ff;
-}
-
-.menu {
-  padding-top: 20px;
-}
-
-.menu:hover {
+.toogle-btn {
+  width: 35px;
+  height: 3px;
+  background-color: #6070ff;
+  margin: 6px 0;
   cursor: pointer;
+  display: none;
+}
+
+.menu-overlay {
+  background-color: #6070ff;
+  display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+  overflow-x: hidden;
+  transition: 0.75ms;
+  backdrop-filter: blur(6px);
+}
+
+.closeMenu {
+  height: 12px;
+  width: 12px;
+  font-size: 20px;
+  border-radius: 0;
+  float: right;
+  margin-right: 38px;
+  margin-top: 62px;
+  color: #fff;
+}
+
+.mobile-menu {
+  list-style: none;
+  padding: 106px 96px 0 28px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.mobile-menu > li {
+  padding-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.mobile-menu > li a {
+  color: #fff;
 }
 
 /* header-logo */
@@ -34,11 +78,6 @@ header {
   font-size: 18px;
   font-weight: bold;
   height: 20px;
-}
-
-a {
-  text-decoration: none;
-  list-style: none;
 }
 
 .logo:hover {
@@ -334,4 +373,30 @@ hr {
   border: 2px black solid;
   margin: 0 auto;
   border-radius: 10px;
+}
+
+.desktop-menu {
+  margin-right: 50px;
+}
+
+.desktop-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.desktop-menu ul li a {
+  color: #344563;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .toogle-btn {
+    display: block;
+  }
 }
