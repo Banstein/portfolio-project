@@ -391,6 +391,25 @@ hr {
   margin-left: 32px;
 }
 
+.contacts-form {
+  color: red;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  align-self: center;
+  padding-bottom: 5px;
+}
+
+.error {
+  margin-bottom: 15px;
+  height: 48px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  border: 1px solid red;
+  padding: 16px;
+  color: #172b4d;
+}
+
 @media only screen and (max-width: 768px) {
   .desktop-menu {
     display: none;
