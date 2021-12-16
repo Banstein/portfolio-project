@@ -394,10 +394,9 @@ hr {
 
 /* validate */
 
-.error-msg {
+.error-message {
   color: red;
   font-size: 17px;
-  font-family: 'Poppins', sans-serif;
   align-self: center;
   padding-bottom: 5px;
 }
@@ -406,7 +405,6 @@ hr {
   margin-bottom: 15px;
   height: 48px;
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
   font-size: 17px;
   border: 1px solid red;
   padding: 16px;
@@ -539,3 +537,84 @@ hr {
     display: block;
   }
 }
+
+/* try */
+/* 
+contact-form {
+  background-image: url("assets/contact_form_shapes.png"), url("assets/Contact_me.png");
+  background-size: auto 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  align-self: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info h2 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin-top: 160px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 38px;
+  padding: 0 70px;
+  color: white;
+}
+
+.contact-input {
+  width: 87.2%;
+  height: 48px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 8px;
+  font-size: 17px;
+  border: none;
+  color: #00050e;
+  text-indent: 10px;
+}
+
+.contact-textarea {
+  font-size: 17px;
+  border: none;
+  color: #00050e;
+  text-indent: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  width: 87.2%;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.contact-textarea:focus {
+  border: 1px solid #6070ff;
+}
+
+.contact-button:hover {
+  background-color: #fff;
+  border: 1px solid white;
+  color: white;
+  font-size: 17px;
+}
+
+.input-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  align-self: flex-start;
+} */
