@@ -19,3 +19,22 @@ for (let i = 0; i < mobileMenuLinks.length; i += 1) {
     closeMobileMenu();
   });
 }
+
+//popup-window
+
+const popupWidnow = document.querySelector('.pop-main');
+const popButton = document.querySelectorAll('.see-button').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    popupWidnow.style.visibility = 'visible';
+  })
+});
+const xbtn = document.querySelector('#close-btn');
+  xbtn.addEventListener('click', () => {
+    popupWidnow.style.visibility = 'hidden';
+})
+
+
+
+
+
+
