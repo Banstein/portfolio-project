@@ -212,17 +212,16 @@ button {
   margin: 28px 0;
   width: 124px;
   height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #fff;
   color: #396df2;
   border-radius: 16px;
   border: 1px solid #6070ff;
 }
 
-button:hover {
+button:hover:not(#close-btn) {
   cursor: pointer;
+  background-color: #396df2;
+  color: #fff;
 }
 
 .four {
@@ -361,6 +360,7 @@ hr {
 .get-it-touch:hover {
   background-color: #6070ff;
   color: #fff;
+  border: 1px #fff solid;
 }
 
 .get-it-touch:visited {
@@ -373,6 +373,7 @@ hr {
   border: 2px black solid;
   margin: 0 auto;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .desktop-menu {
@@ -391,6 +392,142 @@ hr {
   margin-left: 32px;
 }
 
+/* validate */
+
+.error-message {
+  color: red;
+  font-size: 17px;
+  align-self: center;
+  padding-bottom: 5px;
+}
+
+.error {
+  margin-bottom: 15px;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 17px;
+  border: 1px solid red;
+  padding: 16px;
+  color: #172b4d;
+}
+
+/* popup-window */
+
+.pop-main {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.pop-container {
+  display: flex;
+  margin: 50px 60px;
+  flex-flow: wrap column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.pop-text {
+  margin: 12px auto;
+
+}
+
+.pop-header {
+  color: #172b4d;
+  font-weight: 700;
+}
+
+.pop-list1 {
+  display: flex;
+  margin: 18px 0;
+}
+
+.pop-list1 li {
+  margin-right: 40px;
+  font-weight: 600;
+  color: #7a869a;
+  font-size: 13px;
+}
+
+.pop-list1 li:first-child {
+  list-style: none;
+  color: #344563;
+}
+
+.pop-img {
+  margin: 0 auto;
+}
+
+.pop-list2 {
+  display: flex;
+  margin: 12px 0;
+}
+
+.pop-list2 li {
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 4px 12px;
+  background: #ebebff;
+  margin-right: 8px;
+  border-radius: 8px;
+  list-style: none;
+}
+
+.pop-btn-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.pop-btn {
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+#pop-icon {
+  list-style: none;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+#pop-icon a {
+  color: #6070ff;
+}
+
+#pop-icon a:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+#close-btn {
+  position: fixed;
+  background-color: transparent;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  top: 70px;
+  right: 100px;
+  font-size: 30px;
+  color: #67798e;
+}
+
+
 @media only screen and (max-width: 768px) {
   .desktop-menu {
     display: none;
@@ -400,3 +537,84 @@ hr {
     display: block;
   }
 }
+
+/* try */
+/* 
+contact-form {
+  background-image: url("assets/contact_form_shapes.png"), url("assets/Contact_me.png");
+  background-size: auto 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  align-self: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info h2 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin-top: 160px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 38px;
+  padding: 0 70px;
+  color: white;
+}
+
+.contact-input {
+  width: 87.2%;
+  height: 48px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 8px;
+  font-size: 17px;
+  border: none;
+  color: #00050e;
+  text-indent: 10px;
+}
+
+.contact-textarea {
+  font-size: 17px;
+  border: none;
+  color: #00050e;
+  text-indent: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  width: 87.2%;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.contact-textarea:focus {
+  border: 1px solid #6070ff;
+}
+
+.contact-button:hover {
+  background-color: #fff;
+  border: 1px solid white;
+  color: white;
+  font-size: 17px;
+}
+
+.input-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  align-self: flex-start;
+} */
