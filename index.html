@@ -179,14 +179,23 @@
     </main>
     <footer class='container' id="contact">
         <article >
-            <h1>Contact me</h1>
-            <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-            <form action="https://formspree.io/f/xayvwlyd" method="post" class="contacts-form">
-                <input id="username" type="text" placeholder="Username" required name="username" maxlength=30>
-                <input id="email" type="email" placeholder="E-mail" required name="email">
-                <textarea name="text-form" id="text-form" cols="50" rows="6" placeholder="Write your message here" maxlength=500></textarea >
-                <button class="get-it-touch" type="submit">Get It Touch</button>
+            <!-- form start -->
+            <h2>Contact me</h2>
+                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+            <form class="contact-info" action="https://formspree.io/f/xayvwlyd" method="POST">
+                <div class="input-container">
+                    <input type="text" name="Name" class="contact-input"  id="user_name" maxlength="30" required placeholder="Write your name">
+                    <input type="email" name="_replyTo" class="contact-input" id="user_email" placeholder="Write your email" required>
+                    <textarea name="message" class="contact-textarea" id="user_email_message" cols="30" rows="10" required maxlength="500" placeholder="Write your message here"></textarea>
+                    <span class="error-message" aria-live="polite"></span>
+                    <div class="works-flex-item get-it">
+                     <div class="btn-get no-padding">
+                       <button type="submit" class="btn-get-it-touch">Get In Touch</button>
+                      </div>
+                   </div> 
+                </div>
             </form>
+            <!-- form end -->
             <div class="end-break"><a href="#header"></a></div>
         </article>
     </footer>
@@ -200,7 +209,30 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
-    <div id="projectPopup" class="popup"></div>
+    <div class="pop-main">
+        <div class="pop-container">
+            <h1 class="pop-header">Tonic</h1>
+            <ul class="pop-list1">
+                <li>CANOPY</li>
+                <li>Back End Dev</li>
+                <li>2015</li>
+            </ul>
+            <img class="pop-img" src="images/one-background.png" alt="">
+            <p class="pop-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis aliquam nihil hic. Dolor quo omnis, incidunt itaque quam dolore totam, aliquam quae dolorum, expedita autem ex architecto. Commodi non iure dolor facere? Ipsum laborum illo incidunt aliquid debitis molestias alias ea reiciendis iure, magnam ex repellat dolorem praesentium magni sint nobis veritatis nemo illum iste corporis sed optio vero similique veniam. Asperiores veritatis sit facere in atque. Vitae, esse.</p>
+            <ul class="pop-list2">
+                <li>html</li>
+                <li>css</li>
+                <li>javaScript</li>
+            </ul>
+            <hr>
+            <div class="pop-btn-container">
+                <button class="pop-btn live">See live<li id="pop-icon"><a href="#" ><i class="fa fa-rss" aria-hidden="true"></i></a></li></button>
+                <button class="pop-btn source">See Source<li id="pop-icon"><a href="#" ><i class="fa fa-github" aria-hidden="true"></i></a></li></button>
+            </div>
+        </div>
+        <button id="close-btn">&times;</button>
+    </div>
     <script src="main.js"></script>
+    <script src="Validate.js"></script>
 </body>
 </html>
