@@ -179,14 +179,20 @@
     </main>
     <footer class='container' id="contact">
         <article >
-            <h1>Contact me</h1>
-            <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-            <form action="https://formspree.io/f/xayvwlyd" method="post" class="contacts-form">
-                <input id="username" type="text" placeholder="Username" id="user_name" required name="username" maxlength=30>
-                <input id="email" type="email" placeholder="E-mail" id="user_email" required name="email">
-                <textarea name="text-form" id="text-form" cols="50" rows="6" placeholder="Write your message here" maxlength=500></textarea >
-                <span class="error-msg" aria-live="polite"></span>
-                <button class="get-it-touch" type="submit">Get It Touch</button>
+            <form class="contact-info" action="https://formspree.io/f/mwkyenjw" method="POST">
+                <h2>Contact me</h2>
+                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+                <div class="input-container">
+                    <input type="text" name="Name" class="contact-input"  id="user_name" maxlength="30" required placeholder="Write your name">
+                    <input type="email" name="_replyTo" class="contact-input" id="user_email" placeholder="Write your email" required>
+                    <textarea name="message" class="contact-textarea" id="user_email_message" cols="30" rows="10" required maxlength="500" placeholder="Write your message here"></textarea>
+                    <span class="error-message" aria-live="polite"></span>
+                    <div class="works-flex-item get-it">
+                     <div class="btn-get no-padding">
+                       <button type="submit" class="btn-get-it-touch">Get In Touch</button>
+                      </div>
+                   </div> 
+                </div>
             </form>
             <div class="end-break"><a href="#header"></a></div>
         </article>
