@@ -103,4 +103,4 @@ const popButton = document.querySelectorAll('.see-button').forEach((btn) => {
 const xbtn = document.querySelector('#close-btn');
   xbtn.addEventListener('click', () => {
     popupWidnow.style.visibility = 'hidden';
-})
+}
