@@ -509,6 +509,7 @@ hr {
 #pop-icon a:hover {
   background-color: #6070ff;
   color: #fff;
+  background-color: transparent;
 }
 
 #close-btn {
@@ -527,7 +528,6 @@ hr {
   color: #67798e;
 }
 
-
 @media only screen and (max-width: 768px) {
   .desktop-menu {
     display: none;
@@ -536,4 +536,7 @@ hr {
   .toogle-btn {
     display: block;
   }
+}
+@media only screen and (min-width: 992px) {
+  
 }
