@@ -29,7 +29,7 @@ const projects = [
     details: ['CANOPY', 'Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
+    langs: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstraps'],
     gitLink: '#',
     srcLink: '#',
   },
@@ -41,7 +41,7 @@ const projects = [
     details: ['CANOPY', 'Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
+    langs: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstraps'],
     gitLink: '#',
     srcLink: '#',
   },
@@ -53,7 +53,7 @@ const projects = [
     details: ['CANOPY', 'Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
+    langs: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstraps'],
     gitLink: '#',
     srcLink: '#',
   },
@@ -65,7 +65,7 @@ const projects = [
     details: ['CANOPY', 'Back End Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
+    langs: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstraps'],
     gitLink: '#',
     srcLink: '#',
   },
@@ -86,12 +86,15 @@ const popButton = document.querySelectorAll('.see-button').forEach((btn) => {
     </ul>
     <img class="pop-img" src="${card.image}" alt="${card.imageAlt}">
     <p class="pop-text">${card.description}</p>
-    <ul class="pop-list2">
+    <div class="pop-list2-container">
+      <ul class="pop-list2">
     ${card.langs.map((item) => {
       return `<li>${item}</li>`
     }).join('')}
-    </ul>
-    <hr>
+      </ul>
+    </div>
+    
+    <hr class= "pop-hr">
     <div class="pop-btn-container">
       <button class="pop-btn live">See live<li id="pop-icon"><a href="#" ><i class="fa fa-rss" aria-hidden="true"></i></a></li></button>
       <button class="pop-btn source">See Source<li id="pop-icon"><a href="#" ><i class="fa fa-github" aria-hidden="true"></i></a></li></button>

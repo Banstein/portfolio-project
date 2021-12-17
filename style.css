@@ -302,7 +302,7 @@ hr {
   border-top-left-radius: 100px;
 }
 
-.container h1 {
+.container h2 {
   font-weight: bold;
   font-size: 40px;
   text-align: center;
@@ -317,12 +317,24 @@ hr {
   color: #ebebff;
   margin-bottom: 40px;
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
+.input-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column wrap;
+  width: 327px;
+}
 
-.container input {
+.contact-input {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+  margin: 0 auto;
   margin-bottom: 20px;
-  width: calc(100% - 16px);
+  width: calc(327px - 16px);
   padding-left: 16px;
   height: 48px;
   font-size: 17px;
@@ -333,8 +345,9 @@ hr {
   color: #172b4d;
 }
 
-.contacts-form textarea {
-  width: calc(100% - 38px - 15px);
+.contact-textarea {
+  margin: 0 auto;
+  width: calc(327px - 38px - 15px);
   padding: 15px 38px 15px 16px;
   color: #172b4d;
   border-radius: 8px;
@@ -345,19 +358,18 @@ hr {
   color: #b3bac5;
 }
 
-.get-it-touch {
+.btn-get-it-touch {
   width: 140px;
   height: 48px;
-  padding: 12px 16px;
+  padding: 12px 8px;
   font-weight: 500;
   font-size: 17px;
   background-color: #fff;
   color: #6070ff;
   border-radius: 8px;
-  display: flex;
 }
 
-.get-it-touch:hover {
+.btn-get-it-touch:hover {
   background-color: #6070ff;
   color: #fff;
   border: 1px #fff solid;
@@ -414,10 +426,9 @@ hr {
 /* popup-window */
 
 .pop-main {
-  display: block;
   position: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
   top: 0;
@@ -427,16 +438,16 @@ hr {
 
 .pop-container {
   display: flex;
-  margin: 50px 60px;
+  margin: 20px 12px;
   flex-flow: wrap column;
   background-color: #fff;
   padding: 20px;
   border-radius: 16px;
+  
 }
 
 .pop-text {
   margin: 12px auto;
-
 }
 
 .pop-header {
@@ -477,8 +488,14 @@ hr {
   padding: 4px 12px;
   background: #ebebff;
   margin-right: 8px;
+  margin-top: 4px;
   border-radius: 8px;
   list-style: none;
+}
+
+.pop-list2 li:nth-child(n+4) {
+  visibility: hidden;
+  width: 0;
 }
 
 .pop-btn-container {
@@ -522,13 +539,13 @@ hr {
   height: auto;
   margin: 0;
   padding: 0;
-  top: 70px;
-  right: 100px;
+  top: 40px;
+  right: 20px;
   font-size: 30px;
   color: #67798e;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .desktop-menu {
     display: none;
   }
@@ -538,5 +555,37 @@ hr {
   }
 }
 @media only screen and (min-width: 992px) {
-  
+  .pop-container {
+    margin-right: 60px;
+    margin-left: 60px;
+    height: 90vh;
+  }
+  .pop-list2 li:nth-child(n+4) {
+    visibility: visible;
+    width: fit-content;
+  }
+  .pop-list2 {
+    justify-content: center;
+    flex-flow: column wrap;
+    height: 70px;
+  }
+  .pop-hr {
+    width: 0;
+  }
+  .pop-btn-container {
+    justify-content: flex-end;
+  }
+  .pop-img {
+    width: 800px;
+    height: 720px;
+  }
+  .pop-list2-container {
+    margin-right: 180px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #close-btn {
+    right: 100px;
+    top: 40px;
+  }
 }
