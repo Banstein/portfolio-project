@@ -46,7 +46,7 @@
             </section>
         </article>
         <article class="cards" id="portfolio">
-            <section class="one card-pattern">
+            <section class="one card-pattern" id="card-1">
                 <img src="images/one-background.png" alt="Missed Image" class="cards-img">
                 <h2 class="card-header">Tonic</h2>
                 <div class="card-title-container">
@@ -69,7 +69,7 @@
                 </div>
                 <button class="see-button" type="button">See Projects</button>
             </section>
-            <section class="two card-pattern">
+            <section class="two card-pattern" id="card-2">
                 <img src="images/two-background.png" alt="Missed Image" class="cards-img">
                 <h2 class="card-header">Tonic</h2>
                 <div class="card-title-container">
@@ -92,7 +92,7 @@
                 </div>
                 <button class="see-button" type="button">See Projects</button>
             </section>
-            <section class="three card-pattern">
+            <section class="three card-pattern" id="card-3">
                 <img src="images/three-background.png" alt="Missed Image" class="cards-img">
                 <h2 class="card-header">Tonic</h2>
                 <div class="card-title-container">
@@ -115,7 +115,7 @@
                 </div>
                 <button class="see-button" type="button">See Projects</button>
             </section>
-            <section class="four card-pattern">
+            <section class="four card-pattern" id="card-4">
                 <img src="images/four-background.png" alt="Missed Image" class="cards-img">
                 <h2 class="card-header">Tonic</h2>
                 <div class="card-title-container">
@@ -179,14 +179,23 @@
     </main>
     <footer class='container' id="contact">
         <article >
-            <h1>Contact me</h1>
-            <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-            <form action="https://formspree.io/f/xayvwlyd" method="post" class="contacts-form">
-                <input id="username" type="text" placeholder="Username" required name="username" maxlength=30>
-                <input id="email" type="email" placeholder="E-mail" required name="email">
-                <textarea name="text-form" id="text-form" cols="50" rows="6" placeholder="Write your message here" maxlength=500></textarea >
-                <button class="get-it-touch" type="submit">Get It Touch</button>
+            <!-- form start -->
+            <h2>Contact me</h2>
+                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+            <form class="contact-info" action="https://formspree.io/f/xayvwlyd" method="POST">
+                <div class="input-container">
+                    <input type="text" name="Name" class="contact-input"  id="user_name" maxlength="30" required placeholder="Write your name">
+                    <input type="email" name="_replyTo" class="contact-input" id="user_email" placeholder="Write your email" required>
+                    <textarea name="message" class="contact-textarea" id="user_email_message" cols="30" rows="10" required maxlength="500" placeholder="Write your message here"></textarea>
+                    <span class="error-message" aria-live="polite"></span>
+                    <div class="works-flex-item get-it">
+                        <div class="btn-get no-padding">
+                        <button type="submit" class="btn-get-it-touch">Get In Touch</button>
+                        </div>
+                    </div> 
+                </div>
             </form>
+            <!-- form end -->
             <div class="end-break"><a href="#header"></a></div>
         </article>
     </footer>
@@ -200,6 +209,12 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
+    <!-- popWindow -->
+    <div class="pop-main">
+        <div class="pop-container"></div>
+        <button id="close-btn">&times;</button>
+    </div>
     <script src="main.js"></script>
+    <script src="Validate.js"></script>
 </body>
 </html>
