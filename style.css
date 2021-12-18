@@ -591,4 +591,9 @@ hr {
     right: 100px;
     top: 40px;
   }
+
+  .contact-input,
+  .contact-textarea {
+    border-radius: 0;
+  }
 }
