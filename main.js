@@ -19,7 +19,9 @@ for (let i = 0; i < mobileMenuLinks.length; i += 1) {
     closeMobileMenu();
   });
 }
+
 //popup-window
+
 const projects = [
   {
     id: 1,
@@ -75,22 +77,22 @@ const popupWidnow = document.querySelector('.pop-main');
 const popButton = document.querySelectorAll('.see-button').forEach((btn) => {
   btn.addEventListener('click', () => {
     const popContainer = document.querySelector('.pop-container');
-    let id = Number(btn.parentNode.id.split('-')[1]);
-    let card = projects.find((item) => item.id === id );
-    popContainer.innerHTML =`
+    const id = Number(btn.parentNode.id.split('-')[1]);
+    const card = projects.find((item) => item.id === id );
+    popContainer.innerHTML = `
     <h1 class="pop-header">${card.title}</h1>
     <ul class="pop-list1">
     ${card.details.map((item) => {
       return `<li>${item}</li>`
-    }).join('')}
+  }).join('')}
     </ul>
     <img class="pop-img" src="${card.image}" alt="${card.imageAlt}">
     <p class="pop-text">${card.description}</p>
     <div class="pop-list2-container">
       <ul class="pop-list2">
     ${card.langs.map((item) => {
-      return `<li>${item}</li>`
-    }).join('')}
+    return `<li>${item}</li>`
+  }).join('')}
       </ul>
     </div>
     
@@ -101,9 +103,9 @@ const popButton = document.querySelectorAll('.see-button').forEach((btn) => {
     </div>
   `
     popupWidnow.style.visibility = 'visible';
-  })
+  });
 });
 const xbtn = document.querySelector('#close-btn');
-  xbtn.addEventListener('click', () => {
-    popupWidnow.style.visibility = 'hidden';
-})
+xbtn.addEventListener('click', () => {
+  popupWidnow.style.visibility = 'hidden';
+});
