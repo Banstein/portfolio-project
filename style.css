@@ -297,6 +297,7 @@ hr {
   background-repeat: no-repeat;
   background-color: #6070ff;
   display: flex;
+  justify-content: center;
   padding: 105px 24px 8px 24px;
   margin-top: 103px;
   border-top-left-radius: 100px;
@@ -316,11 +317,6 @@ hr {
   text-align: center;
   color: #ebebff;
   margin-bottom: 40px;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
 }
 
 .input-container {
@@ -524,7 +520,6 @@ hr {
 }
 
 #pop-icon a:hover {
-  background-color: #6070ff;
   color: #fff;
   background-color: transparent;
 }
