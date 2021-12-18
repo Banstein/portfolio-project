@@ -74,7 +74,7 @@ const projects = [
 ];
 
 const popupWidnow = document.querySelector('.pop-main');
-const popButton = document.querySelectorAll('.see-button').forEach((btn) => {
+document.querySelectorAll('.see-button').forEach((btn) => {
   btn.addEventListener('click', () => {
     const popContainer = document.querySelector('.pop-container');
     const id = Number(btn.parentNode.id.split('-')[1]);
@@ -90,7 +90,7 @@ const popButton = document.querySelectorAll('.see-button').forEach((btn) => {
     <p class="pop-text">${card.description}</p>
     <div class="pop-list2-container">
       <ul class="pop-list2">
-    ${card.langs.map((item) =>{
+    ${card.langs.map((item) => {
     return `<li>${item}</li>`;
   }).join('')}
       </ul>
