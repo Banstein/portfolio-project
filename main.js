@@ -83,8 +83,8 @@ document.querySelectorAll('.see-button').forEach((btn) => {
     ${card.details.map((item) => `<li>${item}</li>`).join('')}
     </ul>
     <img class="pop-img" src="${card.image}" alt="${card.imageAlt}">
-    <p class="pop-text">${card.description}</p>
     <div class="pop-list2-container">
+      <p class="pop-text">${card.description}</p>
       <ul class="pop-list2">
     ${card.langs.map((item) => `<li>${item}</li>`).join('')}
       </ul>
