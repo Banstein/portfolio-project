@@ -90,8 +90,8 @@ const popButton = document.querySelectorAll('.see-button').forEach((btn) => {
     <p class="pop-text">${card.description}</p>
     <div class="pop-list2-container">
       <ul class="pop-list2">
-    ${card.langs.map((item) => {
-    return `<li>${item}</li>`
+    ${card.langs.map((item) =>{
+    return `<li>${item}</li>`;
   }).join('')}
       </ul>
     </div>
@@ -101,7 +101,7 @@ const popButton = document.querySelectorAll('.see-button').forEach((btn) => {
       <button class="pop-btn live">See live<li id="pop-icon"><a href="#" ><i class="fa fa-rss" aria-hidden="true"></i></a></li></button>
       <button class="pop-btn source">See Source<li id="pop-icon"><a href="#" ><i class="fa fa-github" aria-hidden="true"></i></a></li></button>
     </div>
-  `
+  `;
     popupWidnow.style.visibility = 'visible';
   });
 });
