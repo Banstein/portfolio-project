@@ -317,10 +317,12 @@ hr {
   color: #ebebff;
   margin-bottom: 40px;
 }
+
 .container {
   display: flex;
   justify-content: center;
 }
+
 .input-container {
   margin-left: auto;
   margin-right: auto;
@@ -443,7 +445,6 @@ hr {
   background-color: #fff;
   padding: 20px;
   border-radius: 16px;
-  
 }
 
 .pop-text {
@@ -501,7 +502,6 @@ hr {
 .pop-btn-container {
   display: flex;
   justify-content: center;
-  
 }
 
 .pop-btn {
@@ -554,36 +554,44 @@ hr {
     display: block;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .pop-container {
     margin-right: 60px;
     margin-left: 60px;
     height: 90vh;
   }
+
   .pop-list2 li:nth-child(n+4) {
     visibility: visible;
     width: fit-content;
   }
+
   .pop-list2 {
     justify-content: center;
     flex-flow: column wrap;
     height: 70px;
   }
+
   .pop-hr {
     width: 0;
   }
+
   .pop-btn-container {
     justify-content: flex-end;
   }
+
   .pop-img {
     width: 800px;
     height: 720px;
   }
+
   .pop-list2-container {
     margin-right: 180px;
     display: flex;
     justify-content: flex-end;
   }
+
   #close-btn {
     right: 100px;
     top: 40px;
