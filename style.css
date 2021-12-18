@@ -436,8 +436,8 @@ hr {
 
 .pop-container {
   display: flex;
+  flex-flow: column;
   margin: 20px 12px;
-  flex-flow: wrap column;
   background-color: #fff;
   padding: 20px;
   border-radius: 16px;
@@ -563,7 +563,6 @@ hr {
   }
 
   .pop-list2 {
-    justify-content: center;
     flex-flow: column wrap;
     height: 70px;
   }
@@ -577,14 +576,15 @@ hr {
   }
 
   .pop-img {
-    width: 800px;
-    height: 650px;
+    width: 700px;
+    height: 420px;
   }
 
   .pop-list2-container {
-    margin-right: 180px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1000px;
   }
 
   #close-btn {
