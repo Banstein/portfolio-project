@@ -76,7 +76,7 @@ document.querySelectorAll('.see-button').forEach((btn) => {
   btn.addEventListener('click', () => {
     const popContainer = document.querySelector('.pop-container');
     const id = Number(btn.parentNode.id.split('-')[1]);
-    const card = projects.find((item) => item.id === id );
+    const card = projects.find((item) => item.id === id);
     popContainer.innerHTML = `
     <h1 class="pop-header">${card.title}</h1>
     <ul class="pop-list1">
