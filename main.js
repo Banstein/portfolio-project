@@ -20,8 +20,6 @@ for (let i = 0; i < mobileMenuLinks.length; i += 1) {
   });
 }
 
-//popup-window
-
 const projects = [
   {
     id: 1,
@@ -88,9 +86,7 @@ document.querySelectorAll('.see-button').forEach((btn) => {
     <p class="pop-text">${card.description}</p>
     <div class="pop-list2-container">
       <ul class="pop-list2">
-    ${card.langs.map((item) => {
-    return `<li>${item}</li>`;
-  }).join('')}
+    ${card.langs.map((item) => `<li>${item}</li>`).join('')}
       </ul>
     </div>
     
