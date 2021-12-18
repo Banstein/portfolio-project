@@ -464,10 +464,6 @@ hr {
   font-size: 13px;
 }
 
-.pop-list1 li:first-child {
-  list-style: none;
-  color: #344563;
-}
 
 .pop-img {
   margin: 0 auto;
@@ -488,6 +484,11 @@ hr {
   margin-top: 4px;
   border-radius: 8px;
   list-style: none;
+}
+
+.pop-list1 li:first-child {
+  list-style: none;
+  color: #344563;
 }
 
 .pop-list2 li:nth-child(n+4) {
@@ -527,7 +528,7 @@ hr {
 #close-btn {
   position: fixed;
   background-color: transparent;
-  border:none;
+  border: none;
   outline: none;
   cursor: pointer;
   width: auto;
@@ -591,4 +592,5 @@ hr {
     right: 100px;
     top: 40px;
   }
+
 }
