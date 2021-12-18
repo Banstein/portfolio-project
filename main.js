@@ -82,9 +82,7 @@ document.querySelectorAll('.see-button').forEach((btn) => {
     popContainer.innerHTML = `
     <h1 class="pop-header">${card.title}</h1>
     <ul class="pop-list1">
-    ${card.details.map((item) => {
-      return `<li>${item}</li>`
-  }).join('')}
+    ${card.details.map((item) => `<li>${item}</li>`).join('')}
     </ul>
     <img class="pop-img" src="${card.image}" alt="${card.imageAlt}">
     <p class="pop-text">${card.description}</p>
